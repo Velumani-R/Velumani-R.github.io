@@ -228,3 +228,8 @@ a{ color: var(--brand); }
 .btn:hover {
   background: #1e40af;
 }
+/* Contact page card enhancement */
+.card.kpi {
+  padding: 28px 24px;   /* more breathing room */
+  min-height: 180px;    /* taller cards */
+}
