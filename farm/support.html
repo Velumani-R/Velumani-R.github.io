@@ -1,1 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support Chat | Mathiralamman Organic Farm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-900">
+
+<header class="border-b">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between">
+    <a href="index.html" class="font-semibold">Mathiralamman Organic Farm</a>
+    <nav class="space-x-4 text-sm">
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-12">
+  <h1 class="text-3xl font-semibold">Farm Support Chat</h1>
+  <p class="mt-3 text-slate-700 max-w-2xl">
+    Use our AI assistant to ask about availability, prices, wholesale delivery,
+    pickup timings, and farm policies.
+  </p>
+
+  <div class="mt-8 grid md:grid-cols-2 gap-6">
+    <div class="border rounded-2xl p-6">
+      <h3 class="font-semibold">Open AI Farm Assistant</h3>
+      <p class="mt-2 text-sm text-slate-600">
+        This will open the chatbot in a new tab.
+      </p>
+      <button id="openChat" class="mt-4 w-full bg-slate-900 text-white py-3 rounded-xl">
+        Open Chat →
+      </button>
+    </div>
+
+    <div class="border rounded-2xl p-6">
+      <h3 class="font-semibold">Try asking</h3>
+      <ul class="mt-3 text-slate-700 space-y-2">
+        <li>• What’s available today?</li>
+        <li>• Tomato price and stock?</li>
+        <li>• Wholesale order ₹1500 — delivery?</li>
+        <li>• Pickup hours?</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="border-t">
+  <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-600">
+    © 2026 Mathiralamman Organic Farm • Annur
+  </div>
+</footer>
+
+<script>
+  const CHATBOT_URL = "https://YOUR-STREAMLIT-APP.streamlit.app";
+  document.getElementById("openChat").onclick = () => {
+    window.open(CHATBOT_URL, "_blank");
+  };
+</script>
+
+</body>
+</html>
 
