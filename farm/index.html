@@ -65,6 +65,15 @@
     © 2026 Mathiralamman Organic Farm • Annur
   </div>
 </footer>
+<script>
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  document.querySelectorAll(".nav-link").forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
 
 </body>
 </html>
