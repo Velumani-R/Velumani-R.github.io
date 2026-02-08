@@ -1,80 +1,160 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mathiralamman Organic Farm | Annur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Mathiralamman Organic Farm in Annur. Organic produce. Wholesale pickup & delivery for orders ₹1000+." />
 </head>
+
 <body class="bg-white text-slate-900">
-
-<!-- Header -->
-<header class="border-b">
-  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-    <a href="index.html" class="font-semibold text-lg">Mathiralamman Organic Farm</a>
-   <nav class="nav">
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="products.html" class="nav-link">Products</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="contact.html" class="nav-link">Contact</a>
-  <a href="support.html" class="nav-link">Support</a>
-</nav>
+  <!-- Top info bar -->
+  <div class="bg-slate-900 text-white">
+    <div class="mx-auto max-w-6xl px-4 py-2 text-sm flex items-center justify-between">
+      <p class="opacity-90">Annur • Organic produce • Wholesale pickup & delivery for ₹1000+</p>
+      <a class="underline underline-offset-4 opacity-90 hover:opacity-100" href="support.html">Support Chat</a>
+    </div>
   </div>
-</header>
 
-<!-- Hero -->
-<section class="bg-emerald-50">
-  <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
-    <div>
-      <h1 class="text-4xl font-semibold leading-tight">
-        Organic farm produce from Annur
-      </h1>
-      <p class="mt-4 text-slate-700">
-        Farm-fresh organic vegetables and fruits.  
-        Wholesale pickup & delivery available for orders above <b>₹1000</b>.
-      </p>
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-2xl bg-emerald-600"></div>
+        <div class="leading-tight">
+          <p class="font-semibold">Mathiralamman</p>
+          <p class="text-sm text-slate-600">Organic Farm • Annur</p>
+        </div>
+      </a>
 
-      <div class="mt-6 flex gap-3">
-        <a href="products.html" class="bg-slate-900 text-white px-6 py-3 rounded-xl">
-          View Products
-        </a>
-        <a href="support.html" class="border px-6 py-3 rounded-xl">
-          Ask Support Chat
-        </a>
+      <nav class="hidden md:flex items-center gap-1 text-sm">
+        <a href="index.html" class="nav-link px-4 py-2 rounded-xl">Home</a>
+        <a href="products.html" class="nav-link px-4 py-2 rounded-xl">Products</a>
+        <a href="about.html" class="nav-link px-4 py-2 rounded-xl">About</a>
+        <a href="contact.html" class="nav-link px-4 py-2 rounded-xl">Contact</a>
+        <a href="support.html" class="nav-link px-4 py-2 rounded-xl">Support</a>
+      </nav>
+
+      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-slate-200 px-3 py-2">
+        <span class="text-sm">Menu</span>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="md:hidden hidden border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2 text-sm">
+        <a class="nav-link px-3 py-2 rounded-xl" href="index.html">Home</a>
+        <a class="nav-link px-3 py-2 rounded-xl" href="products.html">Products</a>
+        <a class="nav-link px-3 py-2 rounded-xl" href="about.html">About</a>
+        <a class="nav-link px-3 py-2 rounded-xl" href="contact.html">Contact</a>
+        <a class="nav-link px-3 py-2 rounded-xl" href="support.html">Support</a>
       </div>
     </div>
+  </header>
 
-    <div class="bg-white border rounded-3xl p-6 shadow-sm">
-      <h2 class="font-semibold text-lg">What you can ask our AI assistant</h2>
-      <ul class="mt-4 space-y-2 text-slate-700">
-        <li>• Today’s available items</li>
-        <li>• Price & stock information</li>
-        <li>• Wholesale delivery rules</li>
-        <li>• Pickup timings & policies</li>
-      </ul>
-      <a href="support.html" class="block mt-6 bg-emerald-700 text-white text-center py-3 rounded-xl">
-        Open AI Farm Assistant
-      </a>
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-emerald-50 via-white to-white"></div>
+
+    <div class="relative mx-auto max-w-6xl px-4 py-12 md:py-16 grid lg:grid-cols-2 gap-10 items-center">
+      <!-- Left -->
+      <div>
+        <p class="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2 text-sm text-emerald-900">
+          <span class="h-2 w-2 rounded-full bg-emerald-600"></span>
+          Farm-direct organic produce
+        </p>
+
+        <h1 class="mt-5 text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
+          Organic farm produce from <span class="text-emerald-700">Annur</span>
+        </h1>
+
+        <p class="mt-4 text-lg text-slate-700 leading-relaxed max-w-xl">
+          Farm-fresh organic vegetables and fruits. Wholesale pickup & delivery available for orders above
+          <span class="font-semibold">₹1000</span>.
+        </p>
+
+        <div class="mt-7 flex flex-col sm:flex-row gap-3">
+          <a href="products.html" class="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-6 py-3 text-white hover:bg-slate-800">
+            View Products
+          </a>
+          <a href="support.html" class="inline-flex items-center justify-center rounded-2xl border border-slate-200 px-6 py-3 hover:bg-slate-50">
+            Ask Support Chat
+          </a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-3 gap-4 max-w-xl">
+          <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <p class="text-sm text-slate-600">Location</p>
+            <p class="mt-1 font-semibold">Annur</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <p class="text-sm text-slate-600">Wholesale</p>
+            <p class="mt-1 font-semibold">₹1000+ delivery</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <p class="text-sm text-slate-600">Support</p>
+            <p class="mt-1 font-semibold">AI Chat</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right card -->
+      <div class="lg:justify-self-end w-full">
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+          <div class="p-6 md:p-8">
+            <h2 class="text-xl font-semibold">What you can ask our AI assistant</h2>
+
+            <ul class="mt-4 space-y-2 text-slate-700">
+              <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-600"></span> Today’s available items</li>
+              <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-600"></span> Price & stock information</li>
+              <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-600"></span> Wholesale delivery rules</li>
+              <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-600"></span> Pickup timings & policies</li>
+            </ul>
+
+            <a href="support.html" class="mt-6 inline-flex items-center justify-center w-full rounded-2xl bg-emerald-700 px-6 py-3 text-white hover:bg-emerald-600">
+              Open AI Farm Assistant →
+            </a>
+
+            <p class="mt-3 text-xs text-slate-500">
+              Tip: Ask “What’s available today?” or “Wholesale delivery for ₹1500 order?”
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="border-t mt-10">
-  <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-600">
-    © 2026 Mathiralamman Organic Farm • Annur
-  </div>
-</footer>
-<script>
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-600 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+      <p>© <span id="year"></span> Mathiralamman Organic Farm • Annur</p>
+      <div class="flex gap-5">
+        <a class="hover:text-slate-900" href="products.html">Products</a>
+        <a class="hover:text-slate-900" href="contact.html">Contact</a>
+        <a class="hover:text-slate-900" href="support.html">Support</a>
+      </div>
+    </div>
+  </footer>
 
-  document.querySelectorAll(".nav-link").forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 
+    // Mobile menu
+    const btn = document.getElementById("menuBtn");
+    const nav = document.getElementById("mobileNav");
+    btn?.addEventListener("click", () => nav.classList.toggle("hidden"));
+
+    // Active nav highlight
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".nav-link").forEach(link => {
+      const href = link.getAttribute("href");
+      if (href === currentPage) {
+        link.classList.add("bg-slate-900", "text-white");
+      } else {
+        link.classList.add("text-slate-700", "hover:bg-slate-100");
+      }
+    });
+  </script>
 </body>
 </html>
-
