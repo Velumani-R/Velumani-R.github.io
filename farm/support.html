@@ -159,6 +159,18 @@
       });
     });
   </script>
+<!-- Floating Support Chat button (auto-hidden on Support page) -->
+<a id="floatingChatBtn" href="support.html"
+   class="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-700 px-5 py-3 text-white shadow-lg hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-200">
+  <span class="text-lg">💬</span>
+  <span class="text-sm font-semibold">Support Chat</span>
+</a>
+
+<script>
+  // Hide floating button when already on support page
+  const btn = document.getElementById("floatingChatBtn");
+  if (btn) btn.style.display = "none";
+</script>
 
 </body>
 </html>
