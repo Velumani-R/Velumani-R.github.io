@@ -1,79 +1,194 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Support Chat | Mathiralamman Organic Farm</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support | Mathiralamman Organic Farm</title>
+  <meta name="description" content="AI-powered farm support assistant for availability, pricing, wholesale delivery and pickup timings." />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-white text-slate-900">
 
-<header class="border-b">
-  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between">
-    <a href="index.html" class="font-semibold">Mathiralamman Organic Farm</a>
-    <nav class="nav">
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="products.html" class="nav-link">Products</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="contact.html" class="nav-link">Contact</a>
-  <a href="support.html" class="nav-link">Support</a>
-</nav>
-
+  <!-- Top bar -->
+  <div class="bg-slate-900 text-white">
+    <div class="mx-auto max-w-6xl px-4 py-2 text-sm flex justify-between">
+      <p class="opacity-90">Annur • Organic produce • Wholesale delivery ₹1000+</p>
+      <a href="support.html" class="underline underline-offset-4 hover:opacity-100">Support Chat</a>
+    </div>
   </div>
-</header>
 
-<main class="max-w-6xl mx-auto px-4 py-12">
-  <h1 class="text-3xl font-semibold">Farm Support Chat</h1>
-  <p class="mt-3 text-slate-700 max-w-2xl">
-    Use our AI assistant to ask about availability, prices, wholesale delivery,
-    pickup timings, and farm policies.
-  </p>
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img
+          src="assets/logo.png"
+          alt="Mathiralamman Organic Farm logo"
+          class="h-14 w-14 rounded-2xl object-contain bg-white p-1 border border-slate-200"
+        />
+        <div>
+          <p class="font-semibold text-lg">Mathiralamman</p>
+          <p class="text-sm text-slate-600">Organic Farm • Annur</p>
+        </div>
+      </a>
 
-  <div class="mt-8 grid md:grid-cols-2 gap-6">
-    <div class="border rounded-2xl p-6">
-      <h3 class="font-semibold">Open AI Farm Assistant</h3>
-      <p class="mt-2 text-sm text-slate-600">
-        This will open the chatbot in a new tab.
+      <nav class="hidden md:flex gap-1 text-sm">
+        <a href="index.html" class="nav-link px-4 py-2 rounded-xl">Home</a>
+        <a href="products.html" class="nav-link px-4 py-2 rounded-xl">Products</a>
+        <a href="about.html" class="nav-link px-4 py-2 rounded-xl">About</a>
+        <a href="contact.html" class="nav-link px-4 py-2 rounded-xl">Contact</a>
+        <a href="support.html" class="nav-link px-4 py-2 rounded-xl">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page header -->
+  <section class="bg-emerald-50 border-b border-emerald-100">
+    <div class="mx-auto max-w-6xl px-4 py-12">
+      <h1 class="text-3xl md:text-4xl font-semibold">Farm Support</h1>
+      <p class="mt-3 text-slate-700 max-w-2xl">
+        Get quick answers using our AI assistant — availability, pricing, wholesale delivery rules, and pickup timings.
       </p>
-      <button id="openChat" class="mt-4 w-full bg-slate-900 text-white py-3 rounded-xl">
-        Open Chat →
-      </button>
     </div>
+  </section>
 
-    <div class="border rounded-2xl p-6">
-      <h3 class="font-semibold">Try asking</h3>
-      <ul class="mt-3 text-slate-700 space-y-2">
-        <li>• What’s available today?</li>
-        <li>• Tomato price and stock?</li>
-        <li>• Wholesale order ₹1500 — delivery?</li>
-        <li>• Pickup hours?</li>
-      </ul>
+  <!-- Main content -->
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <div class="grid lg:grid-cols-3 gap-6 items-start">
+
+      <!-- Left: Chat panel -->
+      <div class="lg:col-span-2">
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 class="text-xl font-semibold">Open AI Support Chat</h2>
+          <p class="mt-2 text-sm text-slate-600">
+            Click below to open the chatbot in a new tab. (Best experience on mobile too.)
+          </p>
+
+          <!-- Replace the URL below with your actual Streamlit URL -->
+          <a id="openChatBtn"
+             href="https://mathiralamman-farm-chatbot-y4l9j2muwko5vxgxqjhmqt.streamlit.app"
+             target="_blank" rel="noopener noreferrer"
+             class="mt-5 inline-flex w-full items-center justify-center rounded-2xl bg-emerald-700 px-6 py-3 text-white hover:bg-emerald-600">
+            Open Chat →
+          </a>
+
+          <div class="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
+            <p class="font-semibold">Try these questions</p>
+            <div class="mt-3 grid sm:grid-cols-2 gap-3 text-sm">
+              <button class="suggestion rounded-xl border border-emerald-200 bg-white px-4 py-3 text-left hover:bg-emerald-50">
+                What’s available today?
+              </button>
+              <button class="suggestion rounded-xl border border-emerald-200 bg-white px-4 py-3 text-left hover:bg-emerald-50">
+                Do you deliver for ₹1500 order?
+              </button>
+              <button class="suggestion rounded-xl border border-emerald-200 bg-white px-4 py-3 text-left hover:bg-emerald-50">
+                What are your pickup timings?
+              </button>
+              <button class="suggestion rounded-xl border border-emerald-200 bg-white px-4 py-3 text-left hover:bg-emerald-50">
+                Do you have coconuts in bulk?
+              </button>
+            </div>
+            <p class="mt-3 text-xs text-slate-600">
+              Clicking a suggestion will open the chat and pre-fill your question.
+            </p>
+          </div>
+
+          <div class="mt-6 text-xs text-slate-500">
+            Note: Availability changes by harvest. For large wholesale orders, contact us for confirmation.
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Support info -->
+      <div class="space-y-6">
+
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg">What the assistant can help with</h3>
+          <ul class="mt-4 text-sm text-slate-700 space-y-2">
+            <li>✓ Today’s availability</li>
+            <li>✓ Pricing & stock guidance</li>
+            <li>✓ Wholesale delivery (₹1000+) rules</li>
+            <li>✓ Pickup timings & policies</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+          <h3 class="font-semibold text-lg">Wholesale notes</h3>
+          <p class="mt-2 text-sm text-slate-700">
+            Delivery is supported for wholesale orders above <strong>₹1000</strong>.
+            Timing depends on route, harvest, and confirmation.
+          </p>
+          <a href="contact.html" class="mt-4 inline-flex w-full justify-center rounded-2xl bg-slate-900 px-6 py-3 text-white hover:bg-slate-800">
+            Contact for Wholesale
+          </a>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg">FAQ</h3>
+          <div class="mt-4 space-y-3 text-sm">
+            <details class="rounded-2xl border border-slate-200 bg-white p-4">
+              <summary class="cursor-pointer font-semibold">Is the AI chat free to use?</summary>
+              <p class="mt-2 text-slate-600">Yes. It’s provided to help customers quickly understand availability and policies.</p>
+            </details>
+            <details class="rounded-2xl border border-slate-200 bg-white p-4">
+              <summary class="cursor-pointer font-semibold">Can I order in bulk?</summary>
+              <p class="mt-2 text-slate-600">Yes. Wholesale pickup and delivery options are available for orders above ₹1000.</p>
+            </details>
+            <details class="rounded-2xl border border-slate-200 bg-white p-4">
+              <summary class="cursor-pointer font-semibold">Is availability always accurate?</summary>
+              <p class="mt-2 text-slate-600">Availability changes by harvest. For large orders, confirm via contact.</p>
+            </details>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</main>
+  </section>
 
-<footer class="border-t">
-  <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-600">
-    © 2026 Mathiralamman Organic Farm • Annur
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-600 flex flex-col md:flex-row justify-between gap-4">
+      <p>© <span id="year"></span> Mathiralamman Organic Farm • Annur</p>
+      <div class="flex gap-5">
+        <a href="products.html" class="hover:text-slate-900">Products</a>
+        <a href="contact.html" class="hover:text-slate-900">Contact</a>
+      </div>
+    </div>
+  </footer>
 
-<script>
-  const CHATBOT_URL = "https://mathiralamman-farm-chatbot-y4l9j2muwko5vxgxqjhmqt.streamlit.app/";
-  document.getElementById("openChat").onclick = () => {
-    window.open(CHATBOT_URL, "_blank");
-  };
-</script>
-<script>
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  <!-- Scripts -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-  document.querySelectorAll(".nav-link").forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
-</script>
+    // ACTIVE NAV FIX (GitHub Pages safe)
+    let current = window.location.pathname.split("/").pop();
+    if (!current) current = "index.html";
+    const normalize = s => s.toLowerCase().trim();
+
+    document.querySelectorAll(".nav-link").forEach(link => {
+      const href = normalize(link.getAttribute("href"));
+      link.classList.remove("bg-slate-900", "text-white");
+
+      if (href === normalize(current)) {
+        link.classList.add("bg-slate-900", "text-white");
+      } else {
+        link.classList.add("text-slate-700", "hover:bg-slate-100");
+      }
+    });
+
+    // Suggestion buttons: open Streamlit with prefilled question
+    const chatUrl = document.getElementById("openChatBtn").href;
+
+    document.querySelectorAll(".suggestion").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const q = btn.textContent.trim();
+        // Streamlit will ignore unknown params if not used, but safe to pass as querystring.
+        const url = chatUrl + "?q=" + encodeURIComponent(q);
+        window.open(url, "_blank", "noopener,noreferrer");
+      });
+    });
+  </script>
 
 </body>
 </html>
-
